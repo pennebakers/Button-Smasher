@@ -1,11 +1,16 @@
 const Button = ({counter, setCounter}) => {
-    const handleClick = () => {
+    const handleClickMe = () => {
         setCounter(counter + 1)
+    }
+
+    const handleReset = () => {
+        setCounter(0)
     }
 
     return(
         <div>
-            <button onClick={handleClick}>Click Me</button>
+            <button onClick={handleClickMe}>Click Me</button>
+            <button onClick={handleReset}>Reset</button>
         </div>
     )
 }

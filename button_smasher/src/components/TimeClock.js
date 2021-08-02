@@ -1,6 +1,6 @@
-const TimeClock = () => {
+const TimeClock = ({timer, setTimer}) => {
     return(
-        <h1>60</h1>
+        <h1>{timer}</h1>
     )
 }
 
